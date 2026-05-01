@@ -9,14 +9,27 @@ let _ = 0xAB
 ---
 
 (source_file
+  (whitespace)
   (program_satyh
     (preamble
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_int))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_int))
+      (whitespace)
       (let_stmt
-        (literal_int)))))
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (literal_int))))
+      (whitespace))
 
 =======
 float
@@ -29,14 +42,27 @@ let _ = 0.
 ---
 
 (source_file
+  (whitespace)
   (program_satyh
     (preamble
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_float))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_float))
+      (whitespace)
       (let_stmt
-        (literal_float)))))
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (literal_float))))
+      (whitespace))
 
 =======
 length
@@ -51,18 +77,39 @@ let _ = -1.23pt
 ---
 
 (source_file
+  (whitespace)
   (program_satyh
     (preamble
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_length))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_length))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_length))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_length))
+      (whitespace)
       (let_stmt
-        (literal_length)))))
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (literal_length))))
+      (whitespace))
 
 =======
 string
@@ -77,15 +124,36 @@ let _ = #``a` ``#
 ---
 
 (source_file
+  (whitespace)
   (program_satyh
     (preamble
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_string))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_string))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_string))
+      (whitespace)
       (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
         (literal_string))
+      (whitespace)
       (let_stmt
-        (literal_string)))))
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (literal_string))))
+      (whitespace))

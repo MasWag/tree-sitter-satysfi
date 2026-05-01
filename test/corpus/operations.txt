@@ -1,0 +1,191 @@
+=======
+integer
+=======
+
+let _ = 123 + 0x12
+let _ = 0x12 - 0xAB
+let _ = 0xAB * 123
+
+---
+
+(source_file
+  (whitespace)
+  (program_satyh
+    (preamble
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_int)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_int)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_int)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_int)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_int)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_int)))))
+    (whitespace))
+
+=======
+float
+=======
+
+let _ = 1.23 +. .56
+let _ = .56 -. 1.23
+let _ = 0. *. .56
+let _ = 1.23 /. .56
+
+---
+
+(source_file
+  (whitespace)
+  (program_satyh
+    (preamble
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_float)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_float)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_float)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_float)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))))
+      (whitespace))
+
+=======
+length
+=======
+
+let _ = 0pt +' -0.25cm
+let _ = 0pt -' 0.25cm
+let _ = 0pt -' -0.25cm
+let _ = 3cm *' 0.25
+let _ = .3cm *' 0.25
+let _ = .3cm *' -0.25
+
+---
+
+(source_file
+  (whitespace)
+  (program_satyh
+    (preamble
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_length)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_length)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_length)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))
+      (whitespace)
+      (let_stmt
+        (whitespace)
+        (whitespace)
+        (whitespace)
+        (binary_expr
+          (literal_length)
+          (whitespace)
+          (binary_operator)
+          (whitespace)
+          (literal_float)))))
+      (whitespace))
